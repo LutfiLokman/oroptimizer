@@ -197,7 +197,7 @@ function App() {
     totalIcuHours = sumIcuHours += adjustedIcuHours;
 
     const roundedCount = Math.round(count);
-    const losDays = Math.round(losHours / 24);
+    const losDays = Math.round(adjustedLosHours / 24);
     const orHours = Math.round((surgeryMinutes / 60) * 10) / 10;
     const formattedRevenue = new Intl.NumberFormat("en-US", {
       style: "currency",
